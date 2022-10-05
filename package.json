@@ -10,7 +10,7 @@
     "prettier": "2.4.1"
   },
   "scripts": {
-    "test": "elm-verify-examples --run-tests",
+    "test": "elm-verify-examples --run-tests && elm-test",
     "postinstall": "elm-tooling install"
   },
   "author": "Dillon Kearns",
