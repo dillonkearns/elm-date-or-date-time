@@ -30,9 +30,9 @@ aDateWithATime : DateOrDateTime.DateOrDateTime
 aDateWithATime =
     DateOrDateTime.DateTime (Time.millisToPosix 1664987219000)
 
-justADate |> DateOrDateTime.dateOrDateTimeToIso8601String
+justADate |> DateOrDateTime.toIso8601
 --> "2022-10-05"
 
-aDateWithATime |> DateOrDateTime.dateOrDateTimeToIso8601String
+aDateWithATime |> DateOrDateTime.toIso8601
 --> "2022-10-05T16:26:59.000Z"
 ```

@@ -1,13 +1,13 @@
 module DateOrDateTime exposing
     ( DateOrDateTime(..)
-    , dateOrDateTimeToIso8601String
+    , toIso8601
     )
 
 {-|
 
 @docs DateOrDateTime
 
-@docs dateOrDateTimeToIso8601String
+@docs toIso8601
 
 -}
 
@@ -30,10 +30,10 @@ import Time
     aDateWithATime =
         DateOrDateTime.DateTime (Time.millisToPosix 1664987219000)
 
-    justADate |> dateOrDateTimeToIso8601String
+    justADate |> toIso8601
     --> "2022-10-05"
 
-    aDateWithATime |> dateOrDateTimeToIso8601String
+    aDateWithATime |> toIso8601
     --> "2022-10-05T16:26:59.000Z"
 
 -}
@@ -44,8 +44,8 @@ type DateOrDateTime
 
 {-| A helper for converting to ISO-8601 formatted Strings Date or DateTime Strings.
 -}
-dateOrDateTimeToIso8601String : DateOrDateTime -> String
-dateOrDateTimeToIso8601String dateOrDateTime =
+toIso8601 : DateOrDateTime -> String
+toIso8601 dateOrDateTime =
     case dateOrDateTime of
         Date date ->
             Date.toIsoString date
