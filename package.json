@@ -1,7 +1,7 @@
 {
-  "name": "REPLACEME",
+  "name": "elm-date-or-date-time",
   "version": "0.0.1",
-  "description": "REPLACEME",
+  "description": "A simple type for either a Time.Posix or a Date.Date.",
   "devDependencies": {
     "elm-review": "^2.7.5",
     "elm-test": "latest-0.19.1",
@@ -10,9 +10,9 @@
     "prettier": "2.4.1"
   },
   "scripts": {
-    "test": "elm-verify-examples --run-tests && elm-test",
+    "test": "elm-verify-examples --run-tests",
     "postinstall": "elm-tooling install"
   },
-  "author": "REPLACEME",
+  "author": "Dillon Kearns",
   "license": "BSD-3-Clause"
 }
