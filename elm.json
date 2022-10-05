@@ -3,7 +3,7 @@
     "name": "dillonkearns/elm-date-or-date-time",
     "summary": "A simple type for either a Time.Posix or a Date.Date.",
     "license": "BSD-3-Clause",
-    "version": "1.0.0",
+    "version": "2.0.0",
     "exposed-modules": [
         "DateOrDateTime"
     ],
